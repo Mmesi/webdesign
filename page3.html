@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Place Your Order
+		</title>
+		<meta charset ="UTF-8"> <!--Character set-->
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Josefin+Sans&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Josefin+Sans&family=Kanit:ital,wght@1,300&display=swap');
+		</style> <!--importing font styles from Google fonts-->
+		<link rel="stylesheet" href="../css/external.css"> <!--link to external style sheet file-->
+		<script src="../javascript/js_external.js"> 
+		</script>
+		<!--link to external javasript file-->
+		
+	</head>
+	
+	<body id="bg1">
+		
+			<p id="para1">To complete your order, please fill out the form below:<p>
+			
+			<div id="form"><form><!--Beginning of form-->
+				<table> <!-- table tag used for proper arrangement of form content-->
+					<tr class="bu"> 
+						<td>
+						Username*<br>
+						<input name="usernm" required placeholder="eg. Florence123">
+						</td>
+					</tr>
+					<tr class="bu">
+						<td>
+						Password*<i>(must be 9 characters long)</i><br>
+						<input name="passwrd" type="password" required maxlength="9" placeholder="*********">
+						</td>
+					</tr>
+					<tr class="bu">
+						<td>
+						Confirm Password*<br>
+					<input name="cpasswrd" type="password" required maxlength="9" placeholder="*********">
+						</td>
+					</tr>
+					<tr class="bu">
+						<td>
+						What Size Of Burger Would You Like?*<br> <!--Drop Down list-->
+						<select onchange="warning(this)">
+							<option value="null">select an option</option>
+							<option value="6oz">6oz Large- 
+								(&euro;7/each)
+							</option>
+							<option value="10z">10oz Extra-Large- 
+								(&euro;9/each)
+							</option>
+							<option value ="16oz">16oz Supersize- 
+								(&euro;17.50/each)</option>
+						</select>
+						</td>
+					</tr>
+					<tr class="bu"> 
+						<td>
+						Number of Burgers*<br>
+						<input type="number" name="qty" required min="1" max="100">
+						</td>
+					</tr>
+					<tr class="bu">
+						<td>
+						Enter a Discount Code<br>
+						<input type="text" name="discode">
+						</td>
+					</tr>
+					
+					<tr id="r">
+						<td><i>*required </i>
+						<button>Submit</button>
+						</td>
+					</tr>
+					
+				</table>
+			</form>
+			</div><!--end of form-->
+</body>
+</html>
